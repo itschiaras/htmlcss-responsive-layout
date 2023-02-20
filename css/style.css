@@ -1,5 +1,25 @@
+/* General */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: var(--light-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* color styles  */
+:root {
+    --secondary-color: #0084FD;
+    --dark-color: #333333;
+    --light-color: #FFFFFF;
+    --primary-color: #9792E4;
+    --bg-card: #B5DDFF;
+    --contrast-color: #FDC15F;
 }
