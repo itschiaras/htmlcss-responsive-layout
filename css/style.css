@@ -17,10 +17,21 @@ html {
 
 .container {
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 ul {
     list-style: none;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.j-center {
+    justify-content: space-between;
 }
 /* color styles  */
 :root {
@@ -42,14 +53,10 @@ header {
     height: 80px;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 header a {
     color: var(--light-color);
+    text-decoration: none;
 }
 
 header nav ul {
@@ -68,4 +75,31 @@ main {
 footer {
     background-color: var(--dark-color);
     color: var(--light-color);
+}
+
+
+
+/* media query  */
+
+@media screen and (min-width: 922px) {
+    header nav ul {
+        display: block;
+        gap: 1rem;
+        
+    }
+
+    #header-icon {
+        display: none;
+    }
+
+    .mq-flex {
+        display: flex;
+    }
+
+    .btn {
+        background-color: var(--light-color);
+        color: black;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+    }
 }
