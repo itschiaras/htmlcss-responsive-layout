@@ -14,6 +14,10 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+.container {
+    padding: 1rem;
+}
 /* color styles  */
 :root {
     --secondary-color: #0084FD;
@@ -22,4 +26,21 @@ html {
     --primary-color: #9792E4;
     --bg-card: #B5DDFF;
     --contrast-color: #FDC15F;
+}
+
+/* header  */
+header {
+    background-color: var(--secondary-color);
+}
+
+/* main  */
+
+.even {
+    background-color: var(--primary-color);
+}
+
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }
