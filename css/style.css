@@ -17,7 +17,7 @@ html {
 
 .container {
     padding: 1rem;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -87,8 +87,8 @@ main {
 .card {
     background-color: var(--bg-card);
     border-radius: 1rem;
-    padding: 1.5rem 2rem 0;
-    margin-bottom: 1rem;
+    padding: 1.5rem 1rem 0 1rem;
+    /* margin-bottom: 1rem; */
     font-weight: bold;
 }
 
@@ -128,6 +128,8 @@ main a {
     color: var(--secondary-color);
 
 }
+
+
 /* footer  */
 footer {
     background-color: var(--dark-color);
@@ -142,11 +144,13 @@ footer {
     .flex {
         display: flex;
         flex-flow: row wrap;
+        
         gap: 10px;
     }
 
     #intro .card {
         width: calc((100% / 3) - 20px);
+        padding-bottom: 0;
     }
 
     #intro .card:first-child {
@@ -154,9 +158,12 @@ footer {
     }
 
     .demo-image {
-        width: 50%;
+        width: 45%;
+        
     }
 
+    
+    
     
    
 
@@ -184,10 +191,6 @@ footer {
         
     }
 
-    /* .flex-end {
-        align-items: flex-end;
-    } */
-
     .btn {
         background-color: var(--light-color);
         color: black;
@@ -196,12 +199,25 @@ footer {
     }
 
     .demo-image {
-        width: 50%;
-        margin-top: 0;
+        margin-top: 2rem;
+        
     }
 
     .card-left {
-        width: 50%;
+        width: 55%;
+        
         
     }
+
+    /* #intro .card:first-child{
+        padding-top: 0;
+        padding-right: 0;
+        
+    } */
+
+
+    .flex-end {
+        align-self: flex-end;
+    }
+    
 }
