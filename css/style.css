@@ -25,6 +25,12 @@ ul {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* utility  */
 .d-flex {
     display: flex;
     align-items: center;
@@ -33,6 +39,12 @@ ul {
 .j-center {
     justify-content: space-between;
 }
+
+.text-center {
+    text-align: center;
+}
+
+
 /* color styles  */
 :root {
     --secondary-color: #0084FD;
@@ -40,6 +52,7 @@ ul {
     --light-color: #FFFFFF;
     --primary-color: #9792E4;
     --bg-card: #B5DDFF;
+    --text-card: #556878;
     --contrast-color: #FDC15F;
 }
 
@@ -65,21 +78,95 @@ header nav ul {
 
 /* main  */
 main {
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 .even {
     background-color: var(--primary-color);
 }
 
+.card {
+    background-color: var(--bg-card);
+    border-radius: 1rem;
+    padding: 1.5rem 2rem 0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
 
+#intro .card h2 {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+#intro .card p {
+    color: var(--text-card);
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    letter-spacing: 3.5px;
+}
+
+.fa-apple {
+    padding-right: .5rem;
+}
+.demo-image {
+    margin-top: 2rem;
+}
+
+main a {
+    text-decoration: none;
+}
+
+.card-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+
+}
+/* footer  */
 footer {
     background-color: var(--dark-color);
     color: var(--light-color);
+
 }
 
 
 
 /* media query  */
+@media screen and (min-width: 768px) {
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 10px;
+    }
+
+    #intro .card {
+        width: calc((100% / 3) - 20px);
+    }
+
+    #intro .card:first-child {
+        width: calc((100% / 3 * 2) - 30px);
+    }
+
+    .demo-image {
+        width: 50%;
+    }
+
+    
+   
+
+
+}
+
+
+
+
+
 
 @media screen and (min-width: 922px) {
     header nav ul {
@@ -94,12 +181,27 @@ footer {
 
     .mq-flex {
         display: flex;
+        
     }
+
+    /* .flex-end {
+        align-items: flex-end;
+    } */
 
     .btn {
         background-color: var(--light-color);
         color: black;
         padding: .5rem 1rem;
         border-radius: 1rem;
+    }
+
+    .demo-image {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    .card-left {
+        width: 50%;
+        
     }
 }
