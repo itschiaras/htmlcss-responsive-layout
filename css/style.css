@@ -18,6 +18,10 @@ html {
 .container {
     padding: 1rem;
 }
+
+ul {
+    list-style: none;
+}
 /* color styles  */
 :root {
     --secondary-color: #0084FD;
@@ -31,10 +35,31 @@ html {
 /* header  */
 header {
     background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: var(--light-color);
+}
+
+header nav ul {
+    display: none;
 }
 
 /* main  */
-
+main {
+    margin-top: 5rem;
+}
 .even {
     background-color: var(--primary-color);
 }
