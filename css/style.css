@@ -62,6 +62,14 @@ img {
     line-height: 2rem;
 }
 
+.mt-2 {
+    margin-top: 10rem;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
 .mb-1 {
     margin-bottom: 1.5rem;
 }
@@ -76,6 +84,22 @@ img {
 
 .mb-4 {
     margin-bottom: 4rem;
+}
+
+.mb-7 {
+    margin-bottom: 7rem;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.pb-3 {
+    padding-bottom: 5rem;
+}
+
+.pt-6 {
+    padding-top: 6rem;
 }
 
 /* color styles  */
@@ -171,7 +195,7 @@ main a {
 #planning .card {
     background-color: var(--primary-color);
     color: var(--light-color);
-    padding: 2rem;
+    /* padding: 2rem 2rem 0; */
 }
 
 
@@ -183,11 +207,32 @@ main a {
     color: var(--dark-color);
     padding: 2rem;
     border-radius: 60px;
+    
+}
+
+.plan-text {
+    display: inline-block;
+    width: 90%;
+}
+.arrow {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 1rem 1.2rem;
+    border-radius: 50%;   
+}
+
+.card-white img {
+    margin: 0 auto;
 }
 
 #testimonials h2 {
     color: var(--primary-color);
 }
+
+#testimonials h5 {
+    text-transform: uppercase;
+}
+
 #testimonials .card {
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -214,6 +259,8 @@ main a {
    margin-top: 1rem;
    line-height: 2rem;
 }
+
+
 
 .quote-card p:last-child {
     text-transform: uppercase;
@@ -269,7 +316,7 @@ footer {
     }
 
     #intro .card:first-child {
-        width: calc((100% / 3 * 2) - 30px);
+        width: calc((100% / 3 * 2) - 10px);
     }
 
     .demo-image {
@@ -368,10 +415,32 @@ footer {
     .flex-end {
         align-self: flex-end;
     }
+
+    .self-center {
+        align-self: center;
+    }
     
     #features .card {
         width: calc((100% / 3) - 20px);
     }
+
+    #planning .card{ 
+        width: 50%;
+        margin-right: 2.5rem;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    #planning .card-white {
+        width: 45%;
+        
+        
+
+    }
+
+    
+
+    
 }
 
 
