@@ -20,7 +20,7 @@ section {
 }
 
 .container {
-    padding: 1rem;
+    padding: 2rem;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -52,16 +52,23 @@ img {
     flex-direction: column;
 }
 
-.j-center {
+.space-between {
     justify-content: space-between;
 }
 
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.j-center {
+    justify-content: center;
+}
 
 .text-center {
     text-align: center;
 }
 
-.line-hight-2 {
+.line-height-2 {
     line-height: 2rem;
 }
 
@@ -71,6 +78,10 @@ img {
 
 .mt-2 {
     margin-top: 2rem;
+}
+
+.mt2 {
+    margin-top: 2.5rem;
 }
 
 .mb {
@@ -301,8 +312,57 @@ main a {
     border-radius: 2rem;
 }
 
+#features h2:first-child {
+    color: var(--light-color);
+    text-align: center;
+}
+
+#about-us .col {
+    padding-top: 3rem;
+    
+}
+
+#about-us h2 {
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+#about-us .relative {
+    position: relative;
+    
+}
+
+#about-us span {
+    color: var(--primary-color);
+    font-size: 5.5rem;
+    position: absolute;
+    left: 9rem;
+    bottom: 8rem;
+    
+   
+}
+
+.quote-container {
+    margin: 1rem 2rem;
+}
+
+#about-us .big-paragraph {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+#about-us .btn {
+    background-color: var(--primary-color);
+    padding: .5rem 1rem;
+    color: var(--light-color);
+    border-radius: 4rem;
+}
+
 #call-to-action .container {
     color: var(--light-color);
+    
 }
 
 .big-text {
@@ -315,10 +375,7 @@ main a {
     border-radius: 5rem;
 }
 
-#features h2:first-child {
-    color: var(--light-color);
-    text-align: center;
-}
+
 
 /* footer  */
 footer {
@@ -374,11 +431,6 @@ footer {
         padding-left: 2rem;
     }
 
-
-    .user-image {
-        margin: 0;
-    }
-
     .flex-space-evenly {
         display: flex;
         justify-content: space-evenly;
@@ -398,7 +450,6 @@ footer {
     .quote-card {
         margin-top: 0;
     }
-
 
 
 

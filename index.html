@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <nav class="container d-flex j-center">
+        <nav class="container d-flex space-between">
             <img src="./img/logo.png" alt="Logo">
             <a id="header-icon" href=""><i class="fa-solid fa-bars"></i></a>
             <ul class="mq-flex">
@@ -31,7 +31,7 @@
     <main>
         <!-- first section  -->
         <section id="intro">
-            <div class="container flex j-center">
+            <div class="container flex space-between">
                 <div class="card first mq-flex ">
                     <div class="card-left ">
                         <h2> Get a demo application</h2>
@@ -95,7 +95,7 @@
                     </div>
                     <div>
                         <h2 class="mb-3 "> Strategic Plannig</h2>
-                        <p class="plan-text line-hight-2"> Egestas dui id ornare arcu odio. In tellus integer feugiat scelerisque varius morbi enim
+                        <p class="plan-text line-height-2"> Egestas dui id ornare arcu odio. In tellus integer feugiat scelerisque varius morbi enim
                             nunc. Habitasse platea dictumst quisque sagittis. Interdum velit euismod in pellentesque
                             massa placerat duis. Quis viverra nibh cras pulvinar mattis.
                         </p>
@@ -122,8 +122,8 @@
         <section class="mb-3" id="testimonials">
             <div class="container text-center">
                 <h5 class="mb-1">Testimonials</h5>
-                <h2 class="mb-1 line-hight-2">We are committed expert partners</h2>
-                <p class="mb-3 line-hight-2">We place huge value on strong relationships and have seen the benefit they bring to our business.
+                <h2 class="mb-1 line-height-2">We are committed expert partners</h2>
+                <p class="mb-3 line-height-2">We place huge value on strong relationships and have seen the benefit they bring to our business.
                     Customer feedback is vital in helping us to get it right.</p>
                 <div class="card mb-3 flex-space-evenly ">
                     <div class="user-image">
@@ -173,7 +173,7 @@
         <section class="even" id="features">
             <div class="container pt-2">
                 <h2> Benefits of working with us</h2>
-                <div class="cards flex j-center mt-2">
+                <div class="cards flex space-between mt-2">
                     <div class="card">
                         <div class="d-flex space-around column align-left ">
                             <h3 class="mb">01</h3>
@@ -240,19 +240,20 @@
 
             </div>
         </section>
-        <section id="about-us">
-            <div class="container flex">
-                <div class="col">
-                    <h2> About Us </h2>
+        <!-- fifth section  -->
+        <section class="pb-5" id="about-us">
+            <div class="container flex space-between">
+                <div class="col ">
+                    <h2 class="mb-2"> About Us </h2>
                     <div class="text">
-                        <p>Sample text. Click to Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec
+                        <p class="line-height-2 mb-3">Sample text. Click to Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec
                             pretium vulputate. Pharetra magna ac placerat vestibulum. Quam lacus suspendisse faucibus
                             interdum posuere lorem. Egestas tellus rutrum tellus pellentesque eu tincidunt. Neque vitae
                             tempus quam pellentesque nec. Vel elit scelerisque mauris pellentesque pulvinar pellentesque
                             habitant morbi. Interdum velit euismod in pellentesque massa placerat duis.
                         </p>
 
-                        <p>
+                        <p class="line-height-2">
                             Quis viverra nibh cras pulvinar mattis. Ornare arcu dui vivamus arcu felis bibendum ut
                             tristique. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio.
                             Dignissim diam quis enim lobortis scelerisque. Tellus molestie nunc non blandit massa enim.
@@ -260,13 +261,15 @@
                         </p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="user-image">
-                        <img src="./img/testimonial1.jpg" alt="testimonial1">
+                <div class="col  d-flex column">
+                    <div class="relative">
+                        <div class="user-image">
+                            <img src="./img/about.jpg" alt="testimonial1">
+                        </div>
+                        <span class=""> <i class="fa-solid fa-quote-left"></i></span>
                     </div>
-                    <span class=""> &ldquo; </span>
                     <div class="quote-container">
-                        <p>
+                        <p class="big-paragraph ">
                             I help companies tincidunt tortor
                             aliquam nulla
                             facilisi cras
