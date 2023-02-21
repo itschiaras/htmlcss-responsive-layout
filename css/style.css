@@ -212,7 +212,9 @@ main a {
 }
 
 
-#planning .card h2 {}
+#planning .card-white p {
+    font-style:oblique;
+}
 
 #planning .card-white {
     background-color: var(--light-color);
